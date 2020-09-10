@@ -1,0 +1,889 @@
+<!--<h1>Person Search</h1>-->
+<!--<form action="/process_name" method="post">-->
+<!--  Name:<br>-->
+<!--  <input type="text" name="name">-->
+<!--  <label for="cars"></label>-->
+<!--   <select id="cars" name="cars">-->
+<!--    <option value="All">All</option>-->
+<!--    <option value="Movie">Movie</option>-->
+<!--    <option value="TV">TV</option>-->
+<!--    <option value="Person">Person</option>-->
+<!--   </select><br>-->
+<!--  <br>-->
+<!--  <input type="submit" value="Search">-->
+<!--  <p><sub></sub></p>-->
+<!--  <img src= >-->
+<!--</form>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="/login">Login</a>
+      <a href="/register">Sign up</a>
+      <div class="search-container">
+        <form action="/process_name/" method="post">
+            <select id="cars" name="cars">
+                <option value="All">All</option>
+                <option value="Movie">Movie</option>
+                <option value="TV">TV</option>
+                <option value="Person">Person</option>
+            </select>
+            <input type="text" placeholder="Search" name="name">
+            <label for="cars"></label>
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <p><sub></sub></p>
+            <img src=>
+        </form>
+      </div>
+    </div>
+
+    <div class="container-sm ">
+    <h1>Popular movies</h1>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//9Rj8l6gElLpRL7Kj17iZhrT5Zuw.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/734309'>Santana</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//9Rj8l6gElLpRL7Kj17iZhrT5Zuw.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                <h25>Santana</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/337401'>Mulan</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                <h25>Mulan</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//sMO1v5TUf8GOJHbJieDXsgWT2Ud.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/438396'>Orígenes secretos</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//sMO1v5TUf8GOJHbJieDXsgWT2Ud.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                -->
+<!--                <h25>Orígenes s...</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//ugZW8ocsrfgI95pnQ7wrmKDxIe.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/724989'>Hard Kill</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//ugZW8ocsrfgI95pnQ7wrmKDxIe.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                <h25>Hard Kill</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//zVncJzXzwIO15YM1WilqYn30r54.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/718444'>Rogue</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//zVncJzXzwIO15YM1WilqYn30r54.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                <h25>Rogue</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//sy6DvAu72kjoseZEjocnm2ZZ09i.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/581392'>반도</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//sy6DvAu72kjoseZEjocnm2ZZ09i.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                <h25>반도</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//TnOeov4w0sTtV2gqICqIxVi74V.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/605116'>Project Power</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//TnOeov4w0sTtV2gqICqIxVi74V.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                -->
+<!--                <h25>Project Po...</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//tM4hht0LdY06UbuxGR4LjK6adCD.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/613504'>After We Collided</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//tM4hht0LdY06UbuxGR4LjK6adCD.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                -->
+<!--                <h25>After We C...</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//o1WvNhoackad1QiAGRgjJCQ1Trj.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/724717'>The 2nd</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//o1WvNhoackad1QiAGRgjJCQ1Trj.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                <h25>The 2nd</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//n6hptKS7Y0ZjkYwbqKOK3jz9XAC.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/594328'>Phineas and Ferb  The Movie Candace Against the Universe</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//n6hptKS7Y0ZjkYwbqKOK3jz9XAC.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                -->
+<!--                <h25>Phineas an...</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//eDnHgozW8vfOaLHzfpHluf1GZCW.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/606234'>Archive</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//eDnHgozW8vfOaLHzfpHluf1GZCW.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                <h25>Archive</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//uGhQ2ZGBpzCj6wC5jUrybsZuPTI.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/539885'>Ava</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//uGhQ2ZGBpzCj6wC5jUrybsZuPTI.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                <h25>Ava</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//i4kPwXPlM1iy8Jf3S1uuLuwqQAV.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/721452'>One Night in Bangkok</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//i4kPwXPlM1iy8Jf3S1uuLuwqQAV.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                -->
+<!--                <h25>One Night ...</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//dKSN0oZCUSNcEd39MnySLYmpUiJ.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/735110'>Fuego negro</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//dKSN0oZCUSNcEd39MnySLYmpUiJ.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                -->
+<!--                <h25>Fuego negr...</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//lv3RonWge4GlC9ymNzC0oWpFCfv.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/611395'>征途</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//lv3RonWge4GlC9ymNzC0oWpFCfv.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                <h25>征途</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//5pe30v0z4ucVgwh5nR439cCzwwO.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/632618'>Crímenes de familia</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//5pe30v0z4ucVgwh5nR439cCzwwO.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                -->
+<!--                <h25>Crímenes d...</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//q2lkJf1TAjImTHCEO7XvbqPtnPb.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/703134'>Infamous</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//q2lkJf1TAjImTHCEO7XvbqPtnPb.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                <h25>Infamous</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//aVbqhqYtlxwEGihTEhewZAgDOCX.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/489326'>Mortal</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//aVbqhqYtlxwEGihTEhewZAgDOCX.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                <h25>Mortal</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//kPzcvxBwt7kEISB9O4jJEuBn72t.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/677638'>We Bare Bears: The Movie</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//kPzcvxBwt7kEISB9O4jJEuBn72t.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                -->
+<!--                <h25>We Bare Be...</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//bhNHCeJDFDaB00A46AoCw2mggdE.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href='/Film/id/601165'>Legacy of Lies</a>
+                </div>
+            </div>
+          </div>
+<!--            </div>-->
+<!--            <img src="https://image.tmdb.org/t/p/w500//bhNHCeJDFDaB00A46AoCw2mggdE.jpg" width="255" height="382.5" class="rounded-corners" />-->
+<!--            -->
+<!--                -->
+<!--                <h25>Legacy of ...</h25></a>-->
+<!--            -->
+<!--          </div>-->
+
+    <b></b>
+    </div>
+
+    <div class="container-sm ">
+    <h1>Highly rated movies</h1>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//pci1ArYW7oJ2eyTo2NMYEKHHiCP.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/724089">Gabriel&#39;s Inferno Part II</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//oyG9TL7FcRP4EZ9Vid6uKzwdndz.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/696374">Gabriel&#39;s Inferno</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//zGVbrulkupqpbwgiNedkJPyQum4.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/592350">僕のヒーローアカデミア THE MOVIE ヒーローズ：ライジング</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//2CAL2433ZeIihfX1Hb2139CX0pW.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/19404">दिलवाले दुल्हनिया ले जायेंगे</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//5KCVkau1HEl7ZzfPsKAPM0sMiKc.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/278">The Shawshank Redemption</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//3bhkrj58Vtu7enYsRolD1fZdja1.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/238">The Godfather</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//t7xhP8SQTVanzecvn1oQRVWCXTI.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/424">Schindler&#39;s List</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//q719jXXEzOoYaps6babgKnONONX.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/372058">君の名は。</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/240">The Godfather: Part II</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//zGGWYpiKNwjpKxelPxOMqJnUgDs.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/42269">C&#39;eravamo tanto amati</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//2TeJfUZMGolfDdW6DKhfIWqvq8y.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/129">千と千尋の神隠し</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/496243">기생충</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//mi5VN4ww0JZgRFJIaPxxTGKjUg7.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/522924">The Art of Racing in the Rain</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//velWPhVMQeQKcxggNEU8YmIo52R.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/497">The Green Mile</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//8mRgpubxHqnqvENK4Bei30xMDvy.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/537061">Steven Universe: The Movie</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//h1B7tW0t399VDjAcWJh8m87469b.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/556574">Hamilton</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//plnlrtBUULT0rh3Xsjmpubiso3L.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/680">Pulp Fiction</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//74hLDKjD5aGYOotO6esUVaeISa2.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/637">La vita è bella</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/122">The Lord of the Rings: The Return of the King</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//ppd84D2i9W8jXmsyInGyihiSyqz.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/389">12 Angry Men</a>
+                </div>
+            </div>
+          </div>
+
+    <b></b>
+    </div>
+    <div class="container-sm ">
+    <h1>Upcoming movies</h1>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//uGhQ2ZGBpzCj6wC5jUrybsZuPTI.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/539885">Ava</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//4V2nTPfeB59TcqJcUfQ9ziTi7VN.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/501979">Bill &amp; Ted Face the Music</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//k68nPLbIST6NP96JmTxmZijEvCA.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/577922">Tenet</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//hPkqY2EMqWUnFEoedukilIUieVG.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/531876">The Outpost</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//7W0G3YECgDAfnuiHG91r8WqgIOe.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/446893">Trolls World Tour</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//4w1ItwCJCTtSi9nPfJC1vU6NIVg.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/413518">Pinocchio</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//kTFch1Aoe6MxpLPTEUzvP1VUyD3.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/501953">Eternal Beauty</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//wxPhn4ef1EAo5njxwBkAEVrlJJG.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/514847">The Hunt</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//zQFjMmE3K9AX5QrBL1SXIxYQ9jz.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/579583">The King of Staten Island</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//di1bCAfGoJ0BzNEavLsPyxQ2AaB.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/464052">Wonder Woman 1984</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//nphsStbtAuJ2IaXtCvDXDwMUF5N.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/399363">Wendy</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//cDbOrc2RtIA37nLm0CzVpFLrdaG.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/513584">Think Like a Dog</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//h4cPVVNPZUHVeoF6dH2grBvSEKs.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/507441">Sea Fever</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//sA154deR0X51EcR2lm2FfDczryg.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/524047">Greenland</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//myf3qzpeN0JbuFRPwSpJcz7rmAT.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/458305">Vivarium</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//kPotrGRJf9Z5qYECXv7BjubyFRp.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/491926">Resistance</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//6VZlm8sEwxkE3L5nXxz17QLj1sF.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/471707">Boże Ciało</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//DpFMAjyE6EmIknSduykVc1pB1J.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/639798">Malasaña 32</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//xlO50h3EX1w99KGztTzsjQBwPfs.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/571891">劇場版ポケットモンスター ミュウツーの逆襲 EVOLUTION</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="column" style="background-color:#FFFFFF;">
+            <div class="container">
+                <img src="https://image.tmdb.org/t/p/w500//4YMbJHG0mprA6f4eSx9kqxi3YQQ.jpg" width="255" height="382.5" class="image" />
+                <div class="middle">
+                    <a type="button" class="btn btn-warning" href="/Film/id/730647">브레이크 더 사일런스: 더 무비</a>
+                </div>
+            </div>
+          </div>
+
+    <b></b>
+    </div>
+</body>
+<style>
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+.topnav .search-container {
+   float: none;
+  }
+.topnav a, .topnav input[type=text], .topnav .search-container button {
+   float: none;
+   display: block;
+   text-align: left;
+   width: 100%;
+   margin: 0;
+   padding: 14px;
+}
+.topnav input[type=text] {
+   border: 1px solid #ccc;
+}
+
+{
+  box-sizing: border-box;
+}
+.example {
+  overflow-wrap: break-word;
+}
+</style>
+<style>
+.column {
+  float: left;
+  width: 15%;
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  margin-right: 45px;
+  margin-left: 45px;
+  background-color: lightblue;
+<!--  padding: 50px;-->
+  height: 500px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 255px;
+  height: 382.5px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 35%;
+  left: 114%;
+<!--  padding-top: 20px;-->
+<!--  padding-right: 5px;-->
+<!--  padding-bottom: 20px;-->
+<!--  padding-left: 200px;-->
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #5CCF50;
+  color: white;
+  font-size: 16px;
+  padding: 32px 32px;
+}
+</style>
+</html>
+
