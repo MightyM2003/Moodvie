@@ -1,4 +1,11 @@
-from models import User, WatchLater, Liked
+from flask import render_template, request, redirect, url_for, flash, redirect
+from Flask2 import app, db, bcrypt
+from Flask2.forms import RegistrationForm, LoginForm
+from Flask2.models import User, WatchLater, Liked
+import urllib.request
+import json
+from flask_login import login_user, current_user, logout_user
+
 
 @app.route('/')
 def index():
@@ -705,6 +712,8 @@ def TV_id(id):
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
+    if current_user.is_authenticated:
+        return redirect('/')
     form = RegistrationForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
@@ -717,10 +726,13 @@ def register():
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
+    if current_user.is_authenticated:
+        return redirect('/')
     form = LoginForm()
     if form.validate_on_submit():
-        if form.username.data == '123' and form.password.data == '123':
-            flash('You have been logged in!', 'success')
+        user = User.query.filter_by(username=form.username.data).first()
+        if user and bcrypt.check_password_hash(user.password, form.password.data):
+            login_user(user, remember=form.remember.data)
             return redirect('/')
         else:
             flash('Login Unsuccessful. Please check username and password', 'danger')
@@ -738,11 +750,16 @@ def addwatchlater(id):
         poster = data["poster_path"]
         poster = ("https://image.tmdb.org/t/p/w500/" + str(poster))
         overview = data["overview"]
-        user=User.query.first()
+        user=current_user
         WL = WatchLater(title=title, poster=poster, id_movie=id, User_id=user.id)
         db.session.add(WL)
         db.session.commit()
     return redirect('/Film/id/'+ str(id))
+
+@app.route("/logout")
+def logout():
+    logout_user()
+    return redirect('/')
 
 # hhj = WatchLater.query.filter_by(id=1).all()
 # print(hhj[0].title)
